@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Avenir', 'helvetica neue', helvetica, arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+
+}
+body{
+    overflow: hidden;
+}
+.firstLaunch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.firstLaunch h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.firstLaunch p {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.firstLaunch form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.firstLaunch input[type="date"] {
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    background: #1b1b1b;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #dddddd);
+}
+
+.firstLaunch input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.firstLaunch input[type="date"]:is(:focus, :active, :hover) {
+    background: #000000;
+    transform: translateY(-0.3rem);
+}
+
+.firstLaunch input[type="date"]::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.firstLaunch input[type="date"]::-moz-placeholder {
+    color: #fff;
+}
+
+.firstLaunch input[type="date"]::-ms-input-placeholder {
+    color: #fff;
+}
+
+.firstLaunch input[type="submit"] {
+    font-size: 2rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background: #1b1b1b;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #dddddd);
+}
+
+.firstLaunch input[type="submit"]:is(:focus, :active, :hover) {
+    background: #000000;
+    transform: translateY(-0.3rem);
+}
+
+.wrapper {
+    display: none;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+p,
+sup {
+    display: inline;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+sup {
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.settingsIcon {
+    display: none;
+    position: fixed;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 4rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.settings {
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    box-sizing: border-box;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: #fbfbfb;
+    padding: 2rem;
+    border-radius: 0 0 1.5rem 0;
+    filter: drop-shadow(0 0 0.75rem #bbbbbb);
+}
+
+.settings .settingsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+}
+
+.settings h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.settings h3 {
+    font-size: 2rem;
+}
+
+.settingsForm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-top: 1rem;
+}
+
+.settingsContainer label {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.settings input[type="checkbox"] {
+    font-size: 5rem;
+    padding: 10rem;
+}
+
+.settings input[type="date"] {
+    font-size: 1rem;
+    padding: 0rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    background: #1b1b1b;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #dddddd);
+}
+
+.settings input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.settings input[type="date"]:is(:focus, :active, :hover) {
+    background: #000000;
+    transform: translateY(-0.3rem);
+}
+
+.settings input[type="date"]::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.settings input[type="submit"] {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    background: #1b1b1b;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0 0 0.75rem #dddddd);
+}
+
+.settings input[type="submit"]:is(:focus, :active, :hover) {
+    background: #000000;
+    transform: translateY(-0.3rem);
+}
+
+@media only screen and (max-width: 700px) {
+    .firstLaunch {
+        flex-direction: column;
+    }
+
+    .firstLaunch h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .firstLaunch p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .firstLaunch form {
+        flex-direction: column;
+    }
+
+    .firstLaunch input[type="date"] {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    .firstLaunch input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(0);
+        color: #fff;
+    }
+
+    .firstLaunch input[type="submit"] {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+
+    p,
+    sup {
+        font-size: 3rem;
+    }
+
+    sup {
+        font-size: 2rem;
+    }
+
+    .settings {
+        padding: 1.5rem;
+    }
+
+    .settings h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .settings h3 {
+        font-size: 1.5rem;
+    }
+
+    .settingsForm {
+        flex-direction: column;
+    }
+
+    .settings input[type="checkbox"] {
+        font-size: 3rem;
+        padding: 5rem;
+    }
+
+    .settings input[type="date"] {
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    .settings input[type="date"]::-webkit-calendar-picker-indicator {
+        filter: invert(0);
+        color: #fff;
+    }
+
+    .settings input[type="submit"] {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        width: fit-content;
+    }
+
+}

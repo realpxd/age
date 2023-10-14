@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/generated/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/generated/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/generated/favicon-16x16.png">
+    <link rel="manifest" href="/assets/generated/site.webmanifest">
+    <link rel="mask-icon" href="/assets/generated/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="title" content="Age Counter by PXD / ProgrammerXD">
+    <meta name="description" content="A Simple & Sleek Age Counter to Count your Age upto 12 decimals in Real Time !">
+    <meta name="keywords" content="age counter , pxd , programmerxd , naman , age , counter , realpxd">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="ProgrammerXD">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0">
+    <title>Age Counter</title>
+    <link rel="stylesheet" href="style.css" id="stylesheet">
+</head>
+
+<body>
+    <button id="settingsIcon" class="settingsIcon">&#x2699;</button>
+    <section class="firstLaunch" id="firstLaunch">
+        <div>
+            <h1>Age Counter</h1>
+            <p>How old are you?</p>
+            <form class="ageForm" id="ageForm">
+                <input type="date" name="date" id="dateIn" placeholder="dd-mm-yy" value="dd-mm-yy" required>
+                <input type="submit" value="Start Now !">
+            </form>
+        </div>
+    </section>
+
+
+    <section id="settings" class="settings">
+        <div class="settingsContainer">
+            <h2>Settings</h2>
+            <label class="switch">
+                Dark mode
+                <input type="checkbox" id="darkMode">
+                <span class="slider round"></span>
+            </label>
+            <h3>Change your bday :</h3>
+            <form class="settingsForm" id="settingsForm">
+                <input type="date" name="date" id="dateInUpdate" placeholder="dd-mm-yy" value="dd-mm-yy" required>
+                <input type="submit" value=" Apply ">
+            </form>
+        </div>
+    </section>
+
+
+    <main class="wrapper" id="wrapper">
+        <p id="monitor"></p><sup id="monitor2"></sup>
+    </main>
+    <script src="scripts.js" defer></script>
+</body>
+
+</html>
